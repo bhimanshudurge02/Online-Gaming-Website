@@ -1,0 +1,161 @@
+body {
+    background: url(background.png) no-repeat;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin: 50px 0px;
+    /* background-color: rgb(136, 78, 1); */
+
+}
+
+img {
+    height: 91px;
+    width: 389px;
+}
+
+.player {
+    color: #fff;
+    flex: 0 0 auto;
+    width: 40%;
+    margin: 0px 150px 0px 0px;
+    background-color: rgb(136, 148, 148);
+}
+
+.setting {
+    color: white;
+    flex: 1 1 auto;
+    width: 60%;
+    margin: 0px 0px 0px 300px;
+}
+
+.title {
+    /* color: white; */
+    text-align: center;
+    font-size: 35px;
+    margin-bottom: 20px;
+
+}
+
+.form {
+    background-color: rgb(247, 247, 247);
+    color: black;
+    display: flex;
+    padding: 2px;
+    margin: 20px 20px 20px 0px;
+    font-weight: bold;
+    flex-direction: column;
+}
+
+.lobby {
+    border: 0.5px solid black;
+    text-align: center;
+    justify-content: center;
+    margin: auto;
+    height: 40px;
+}
+
+.Entries {
+    margin-bottom: 15px;
+}
+
+.lobbycontent {
+    flex: 1 1 auto;
+    padding: 8px;
+    background-color: #fff;
+    border: 1px solid #d3d3d3;
+    border-top: 0;
+    border-radius: 0 0 2px 2px;
+    display: flex;
+    flex-direction: column;
+}
+
+.formcontrol {
+    display: inline;
+    width: 100%;
+    height: 34px;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #555;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.Start {
+    height: 27px;
+    width: 100%;
+    background-color: rgb(32, 202, 32);
+    display: inline;
+    border-radius: 5px;
+    border: 10px;
+    margin-top: 10px;
+    border-color: black;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+.check {
+    margin-top: 10px;
+}
+
+.invite {
+    color: white;
+}
+
+.invitetext {
+    position: relative;
+    display: flex;
+    width: 100%;
+}
+
+.invitelink {
+    display: flex;
+    width: 60%;
+    justify-content: center;
+    margin: auto;
+}
+
+inputoverlay:hover {
+    background-color: black;
+}
+
+.c2 {
+    color: #fff;
+    background-color: #f0ad4e;
+    border-color: #eea236;
+    height: 32px;
+}
+
+#input {
+    flex: 1 1 auto;
+    height: 32px;
+    border: 1px solid #d3d3d3;
+    border-radius: 2px 0 0 2px;
+    line-height: 32px;
+    text-align: center;
+}
+
+.inputoverlay {
+    position: absolute;
+    pointer-events: none;
+    opacity: 1;
+    left: 2px;
+    right: 2px;
+    top: 2px;
+    bottom: 2px;
+    color: #e27220;
+    text-align: center;
+    line-height: 28px;
+}
+@media only screen and (min-widt: 375px) {
+    .player{
+        width: 83%;
+    }
+}

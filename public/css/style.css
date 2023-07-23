@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhaina+2&family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Courgette&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Grandstander:wght@300&display=swap');
+* {                
+    margin: 0px;  
+    padding: 0px;
+    
+}
+body{
+   
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient( -45deg, rgb(0, 0, 0), rgb(24, 22, 22), rgb(110, 100, 100));
+    animation: gradient 25s ease infinite;
+    background-size: 400% 400%;
+    
+}
+@keyframes gradient{
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+
+.main{
+    background-color:hsl(42, 99%, 46%);
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    padding: 20px 9%;
+    font-family: 'Grandstander', cursive;
+    font-weight: bolder;
+    color: azure;
+    height: 60px;
+    width: 82%;
+    font-size:49px ;
+}
+.display{
+  padding-top: 10px;
+   font-size: 35px;
+   font-family: 'Baloo Bhaina 2';
+   color: #f3e7f9;
+}
+
+
+
+
+
+   .board {
+    padding-top: 60px;
+    margin: auto;
+    width: 350px;
+    
+   }
+   .board button {
+    height: 100px;
+    width: 100px;
+    margin: 0px;
+    padding: 0px;
+    float: left;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    font-size: 3em;
+    background-color: hsl(42, 82%, 74%);
+    
+   }
+   button{
+    border: none;
+   }
+   #messages{
+    font-size: 27px;
+    font-family: 'Baloo Bhaina 2'; 
+    color: rgb(255, 255, 255);
+    text-align: center;
+   }
+   #name{
+    text-align: center;
+    font-size: 27px;
+    font-family: 'Baloo Bhaina 2'; 
+    color: rgb(255, 255, 255);
+   }
+   .low {
+    padding: 3px;
+    margin: 0px;
+    line-height: 33px;
+}

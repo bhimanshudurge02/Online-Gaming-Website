@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styleplay.css">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+
+</head>
+<header>
+
+
+
+    <nav id="navbar bg-light">
+        <div class="container">
+            <a id="navbar-brand" href="#">
+                <img src="logo small.gif" alt="" width="300" height="100">
+            </a>
+        </div>
+    </nav>
+    <nav id="navbar bg-light">
+        <div class="container-fluid">
+            <a id="navbar-brand">
+                <img src="clock.gif" alt="" width="50" height="50" class="d-inline-block align-text-top">
+                <span class="round"> ROUND 1 of 3</span>
+            </a>
+        </div>
+    </nav>
+</header>
+
+
+<!--
+        <div class="card-container">
+            <div class="float-layout">
+                <span class="card-image">
+                    <img
+                        src="a1.png">
+                    <div class="card">
+                        <div class="card-title">coconut
+
+                        </div>
+
+                    </div>
+                </span>
+            </div>
+        </div>
+        <div class="card-container">
+            <div class="float-layout">
+                <span class="card-image">
+                    <img
+                        src="a1.png">
+                    <div class="card">
+                        <div class="card-title">coconut
+
+                        </div>
+
+                    </div>
+                </span>
+            </div>
+        </div>
+        <div class="card-container">
+            <div class="float-layout">
+                <span class="card-image">
+                    <img
+                        src="a1.png">
+                    <div class="card">
+                        <div class="card-title">coconut
+
+                        </div>
+
+                    </div>
+                </span>
+            </div>
+        </div>
+        <div class="card-container">
+            <div class="float-layout">
+                <span class="card-image">
+                    <img
+                        src="a1.png">
+                    <div class="card">
+                        <div class="card-title">coconut
+
+                        </div>
+
+                    </div>
+                </span>
+            </div>
+        </div>
+        <div class="card-container">
+            <div class="float-layout">
+                <span class="card-image">
+                    <img
+                        src="a1.png">
+                    <div class="card">
+                        <div class="card-title">coconut
+
+                        </div>
+
+                    </div>
+                </span>
+            </div>
+        </div> -->
+
+<!-- <span class="d-flex" style="height: 200px; color: white;">
+
+            <span class="vr"></span>
+        </span> -->
+
+<body>
+    <div class="game">
+        
+        <div class="players">
+            <h3 class="PLAYER">PLAYERS</h3>
+        <div class="card" >
+            <img src="a1.png" class="card-img-top" alt="...">
+            <span class="card-body">
+                <h6 class="card-title"></h6>
+
+
+            </span>
+        </div>
+        <div class="card" >
+            <img src="a2.jpg" class="card-img-top" alt="...">
+            <span class="card-body">
+                <h6 class="card-title"></h6>
+
+
+            </span>
+        </div>
+        <div class="card" >
+            <img src="a1.png" class="card-img-top" alt="...">
+            <span class="card-body">
+                <h6 class="card-title"></h6>
+
+
+            </span>
+        </div>
+        <div class="card" >
+            <img src="a2.jpg" class="card-img-top" alt="...">
+            <span class="card-body">
+                <h5 class="card-title"></h5>
+
+
+            </span>
+        </div>
+        <div class="card" >
+            <img src="a1.png" class="card-img-top" alt="...">
+            <span class="card-body">
+                <h5 class="card-title"></h5>
+
+
+            </span>
+        </div>
+        <div class="card" >
+            <img src="a2.jpg" class="card-img-top" alt="...">
+            <span class="card-body">
+                <h5 class="card-title"></h5>
+
+
+            </span>
+        </div>
+    </div>
+
+        <div id="containerCanvas">
+            <canvas id="canvasGame" width="800" height="600">
+                Canvas
+                not supported by your Browser!
+            </canvas>
+            <div id="rateDrawing">
+                <div class="item">
+                    <div class="thumbsUp"></div>
+                </div>
+                <div class="item">
+                    <div class="thumbsDown"></div>
+                </div>
+            </div>
+            <div id="overlay" style="opacity: 0; display: none;">
+                <div class="content" style="bottom: 100%; display: none;">
+                    <div class="text">Slay is choosing a word!</div>
+                    <div class="revealReason" style="display: none;">Time is up!</div>
+                    <div class="wordContainer" style="display: none;">
+                        <div class="word">collapse</div>
+                        <div class="word">Bart Simpson</div>
+                        <div class="word">airport</div>
+                    </div>
+                    <div class="revealContainer" style="display: none;">
+                        <div class="player">
+                            <div class="name">Blyna</div>
+                            <div class="score" style="color: rgb(7, 234, 48);">+450</div>
+                        </div>
+                        <div class="player">
+                            <div class="name">cinema</div>
+                            <div class="score" style="color: rgb(7, 234, 48);">+280</div>
+                        </div>
+                        <div class="player">
+                            <div class="name">lera</div>
+                            <div class="score" style="color: rgb(7, 234, 48);">+230</div>
+                        </div>
+                        <div class="player">
+                            <div class="name">huh</div>
+                            <div class="score" style="color: rgb(7, 234, 48);">+195</div>
+                        </div>
+                        <div class="player">
+                            <div class="name">Slay</div>
+                            <div class="score" style="color: rgb(232, 19, 0);">0</div>
+                        </div>
+                        <div class="player">
+                            <div class="name">SUS</div>
+                            <div class="score" style="color: rgb(232, 19, 0);">0</div>
+                        </div>
+                        <div class="player">
+                            <div class="name">jail</div>
+                            <div class="score" style="color: rgb(232, 19, 0);">0</div>
+                        </div>
+                        <div class="player">
+                            <div class="name">Asterix</div>
+                            <div class="score" style="color: rgb(232, 19, 0);">0</div>
+                        </div>
+                    </div>
+                    <div class="gameEndContainer" style="display: none;">
+                        <div class="gameEndPlayer" id="gameEndPlayerDummy" style="display: none">
+                            <div class="left">
+                                <div class="avatarContainer">
+                                    <div class="avatar avatar-fit">
+                                        <div class="color"></div>
+                                        <div class="eyes"></div>
+                                        <div class="mouth"></div>
+                                        <div class="special"></div>
+                                        <div class="owner"></div>
+                                    </div>
+                                </div>
+                                <div class="name"></div>
+                            </div>
+                            <div class="rank"></div>
+                        </div>
+                        <div class="gameEndContainerPlayersBest"></div>
+                        <div class="gameEndContainerPlayers"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="chat">
+            <h3 class="box">GUESSES</h3>
+           
+                <form action="backend.php" class="f">
+                    
+                    <label for="name">Enter your guess</label>
+                 
+                        <input type="text" name="myName" id="name">
+        </div>
+
+    </div>
+</body>
+<footer>
+    <div class="footer">
+      
+      
+      <div class="social-icons">
+        <i class="fab fa-facebook-f"></i>
+        <i class="fab fa-twitter"></i>
+        <i class="fab fa-google-plus-g"></i>
+        <i class="fab fa-instagram"></i>
+        <i class="fas fa-rss"></i>
+      </div>
+      <section class="Subscribe">
+       
+        <h2>SKRIBBL</h2> 
+        <hr>
+        <p>buy the subscription to play all the games and earn special prizes</p>
+        <input type="email" placeholder="Email Address">
+        <button type="button" class="footer-buttons">Subscribe</button>
+      </section>
+      <div class="copyright">Copyright © 2022 Scribbl.   </div>
+    </div>
+  </footer>
+  </html>

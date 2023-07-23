@@ -1,0 +1,240 @@
+#navbar-brand{
+    /* background-color: aliceblue; */
+    height: 100px;
+    width: 200px;
+    
+}
+.round{
+    color: rgb(12, 7, 7);
+    padding: 10px;
+    margin: 10px;
+}
+body {
+    background: url(bg.png.jpg)
+
+}
+.container-fluid{
+    background-color: whitesmoke;
+}
+.players{
+  display: flex;
+  flex-direction: column;
+  margin-left: 10px;
+  width: 1000px;
+}
+
+canvas {
+    background: #fff;
+    width: 100%;
+    display: inline;
+    vertical-align: baseline;
+  
+    height: auto;}
+   
+    canvas :hover  {
+      cursor: url(cursor.png);
+    }
+   
+    #rateDrawing {
+        width: calc(48px * 2);
+        height: 48px;
+        right: 8px;
+        top: 8px;
+        position: absolute;
+        display: flex;
+      }
+     
+    #rateDrawing .item {
+      flex: 1 1 auto;
+      width: 100%;
+      height: 100%;
+      cursor: url(cursor.png);
+      opacity: .5;
+      filter: alpha(opacity=50);
+    }
+      #rateDrawing .item .thumbsUp {
+        width: 100%;
+        height: 100%;
+        background-image: url(thumbsup.gif);
+        background-size: contain;
+      }
+      #rateDrawing .item .thumbsDown {
+        width: 100%;
+        height: 100%;
+        background-image: url(thumbsdown.gif);
+        background-size: contain;
+      }
+      #containerCanvas{
+        margin: 0px 12px;
+        
+      }
+      element {
+        opacity: 0;
+        display: none;
+      }
+      #overlay {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        line-height: 1;
+        opacity: 0;
+        background: white;
+        text-shadow: 0 0 3px #000;
+      }
+      #overlay .content {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+      }
+      #overlay .content .text {
+        flex: 0 0 auto;
+        font-size: 2.2vw;
+        text-align: center;
+        color: #fff;
+        margin-bottom: 0;
+      }
+      #overlay .revealReason {
+        font-size: 1.5vw;
+        color: #d3d3d3;
+        margin-bottom: 20px;
+      }
+      
+      .float-layout {
+        padding: 5px 5px;
+        float: left;
+        /* width: 20px; */
+        height: 20px;
+        box-sizing: border-box;
+        margin: 0;
+      }
+      
+      
+        .game {
+         display: inline-flex;
+
+        flex-direction: row;
+         /* align-content: flex-start; */
+         margin-top: 5px;
+        }
+        .card {
+            display: flex;
+            flex-direction: column;
+            background-color: rgb(224, 230, 207);
+            padding: 10px;
+            margin: 5px;
+            width: 10rem;
+            height: 2.5rem;
+          }
+          .card img {
+            width: 20%;
+          }
+          .card-title{
+            /* padding: 13px 43px; */
+            margin: -41px 14px;
+          }
+          .players{
+            background-color: white;
+          }
+          .chat{
+            height: 500px;
+            border: rgb(162, 217, 43) 7px ;
+            background-color: rgb(213, 238, 172);
+             width: 25%;
+             margin-right: 10px;
+          }
+          .box{
+            display:flex;
+            align-items: center;
+            justify-content: center;
+            width: 25%;
+            color: rgb(241, 13, 13);
+            margin-left: 71px;
+          }
+          .f{
+            margin-top: 401px;
+            height: 20px;
+            border: rgb(54, 49, 49) 1px ;
+          }
+          .social-icons{
+            text-align: right;
+            flex-grow: 1;
+              color: white;
+          }
+          .social-icons i{
+            margin: 0 7px;
+            cursor: pointer;
+          }
+          .footer{
+              background-color: black;
+          color: white;
+          margin-top: 100px;
+          }
+          .copyright{
+              display: flex;
+              align-items: center;
+              justify-content: center;
+          }
+          footer hr{
+              border-top: 1px solid #fce4ec;
+          }
+          @media only screen and (min-width: 375px) {
+            .game{
+              flex-direction: column;
+            }
+            .players{
+              margin-right: 37px;
+              width: 300px;
+
+            }
+            .card{
+              width: 13rem;
+            }
+            canvas{
+              margin-top: 10px;
+            }
+            .box{
+              margin-left: 125px;
+            }
+            .chat{
+              height: 465px;
+              width: 350px;
+              margin-left: 15px;
+              margin-right: 15px;
+            }
+            .container-fluid{
+              width: 182%;
+            }
+            .footer{
+              width: 182%;
+            }
+          }
+          @media only screen and (min-width: 360px) {
+            .game{
+              flex-direction: row;
+            }
+            .players{
+              margin-right: 37px;
+              width: 100px;
+
+            }
+            .card{
+              width: 4rem;
+            }
+            canvas{
+              margin-top: 10px;
+              height: 500px;
+              width: 298px;
+              margin-right: 5px;
+            }
+            .box{
+              margin-left: 77px;
+            }
+            .chat{
+              height: 500px;
+              width: 189px;
+              margin-right: 5px;
+              margin-top: 8px;
+            }
+          }
+          
